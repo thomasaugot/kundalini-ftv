@@ -64,61 +64,49 @@ const Navbar = () => {
         </label>
         <div className="menu-items">
           <ScrollLink
-            to="AboutPage"
+            to="/"
             smooth={true}
             duration={500}
-            className={`nav-item ${activeLink === "AboutPage" ? "active" : ""}`}
+            className={`nav-item ${activeLink === "home" ? "active" : ""}`}
             onClick={() => {
               setMenuOpen(false);
-              setActiveLink("AboutPage");
+              setActiveLink("home");
+            }}
+          >
+            {t("Home")}
+          </ScrollLink>
+          <ScrollLink
+            to="/about"
+            smooth={true}
+            duration={500}
+            className={`nav-item ${activeLink === "about" ? "active" : ""}`}
+            onClick={() => {
+              setMenuOpen(false);
+              setActiveLink("about");
             }}
           >
             {t("About")}
           </ScrollLink>
           <ScrollLink
-            to="CurriculumPage"
+            to="/services"
             smooth={true}
             duration={500}
-            className={`nav-item ${activeLink === "CurriculumPage" ? "active" : ""}`}
+            className={`nav-item ${activeLink === "services" ? "active" : ""}`}
             onClick={() => {
               setMenuOpen(false);
-              setActiveLink("CurriculumPage");
+              setActiveLink("services");
             }}
           >
-            {t("Curriculum")}
+            {t("Services")}
           </ScrollLink>
           <ScrollLink
-            to="PortfolioPage"
+            to="/contact"
             smooth={true}
             duration={500}
-            className={`nav-item ${activeLink === "PortfolioPage" ? "active" : ""}`}
+            className={`nav-item ${activeLink === "contact" ? "active" : ""}`}
             onClick={() => {
               setMenuOpen(false);
-              setActiveLink("PortfolioPage");
-            }}
-          >
-            {t("Projects")}
-          </ScrollLink>
-          <ScrollLink
-            to="TestimonialsPage"
-            smooth={true}
-            duration={500}
-            className={`nav-item ${activeLink === "TestimonialsPage" ? "active" : ""}`}
-            onClick={() => {
-              setMenuOpen(false);
-              setActiveLink("TestimonialsPage");
-            }}
-          >
-            {t("Testimonials")}
-          </ScrollLink>
-          <ScrollLink
-            to="ContactPage"
-            smooth={true}
-            duration={500}
-            className={`nav-item ${activeLink === "ContactPage" ? "active" : ""}`}
-            onClick={() => {
-              setMenuOpen(false);
-              setActiveLink("ContactPage");
+              setActiveLink("contact");
             }}
           >
             {t("Contact")}
