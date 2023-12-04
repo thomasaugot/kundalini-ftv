@@ -1,9 +1,9 @@
 "use client";
 
 import React, { useState } from "react";
-import englishFlag from "../../../public/assets/en.png";
-import frenchFlag from "../../../public/assets/fr.png";
-import spanishFlag from "../../../public/assets/es.png";
+import englishFlag from "../../../public/assets/LanguageMenu/en.png";
+import frenchFlag from "../../../public/assets/LanguageMenu/fr.png";
+import spanishFlag from "../../../public/assets/LanguageMenu/es.png";
 import { useTranslation } from "react-i18next";
 import { RxChevronDown } from "react-icons/rx";
 import "./LanguagesMenu.scss";
