@@ -36,7 +36,7 @@ function LanguagesMenu() {
         onClick={toggleMenu}
       />
       <IconContext.Provider
-        value={{ style: { verticalAlign: "middle", width: "30px", cursor: "pointer" } }}
+        value={{ style: { verticalAlign: "top", width: "30px", cursor: "pointer" } }}
         className="chevron-icon"
       >
         <RxChevronDown size={20} />
