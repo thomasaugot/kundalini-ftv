@@ -7,7 +7,7 @@ import "./page.scss";
 export default function Home() {
   return (
     <main className="main">
-      <div className="home__section">
+      <div className="home_section">
         <Image
           src={lobosIsland}
           alt="lobos island"
