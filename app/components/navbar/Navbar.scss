@@ -1,9 +1,10 @@
+@import "../../globals.scss";
+
 .navbar {
-  opacity: 0.2;
-  background: rgba(26, 25, 25, 0.5);
+  background: #666666;
   position: fixed !important;
   width: 100vw;
-  color: black;
+  color: $primary-font-color;
   opacity: 0.85;
   z-index: 100;
   height: 4em;
@@ -33,14 +34,13 @@
         padding-block: 25px;
         padding-inline: 60px;
         text-decoration: none;
-        color: black;
+        color: $primary-font-color;
         height: 100%;
         transition: 0.3s ease color;
-        color: #fff;
         font-family: Montserrat;
         font-size: 18px;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 700;
         line-height: normal;
         cursor: pointer;
         &:not(:last-child) {
@@ -76,7 +76,7 @@
   @media (max-width: 992px) {
     opacity: 1;
     backdrop-filter: blur(20px);
-    background: rgba(26, 25, 25, 0.9);
+    background: $primary-bg;
 
     .navbar-container {
       display: block;
@@ -115,7 +115,7 @@
           height: 4px;
           width: 100%;
           border-radius: 10px;
-          background: white;
+          background: $primary-font-color;
         }
 
         .line1 {
@@ -136,7 +136,7 @@
       .menu-items {
         padding-block: 100px;
         backdrop-filter: blur(2px);
-        background: rgba(26, 25, 25, 0.9);
+        background: $primary-bg;
         height: 100vh;
         width: 100vw !important;
         transform: translate(150%);

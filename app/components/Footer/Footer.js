@@ -13,9 +13,6 @@ const Footer = () => {
         <Link href="/contact" className="footer_links_item">
           Contact
         </Link>
-        <Link href="/terms-and-conditions" className="footer_links_item">
-          Terms and Conditions
-        </Link>
         <Link href="/privacy-policy" className="footer_links_item">
           Privacy Policy
         </Link>
